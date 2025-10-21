@@ -4,7 +4,7 @@ The **Meteora Comprehensive Substreams Package** contains a set of modules that 
 
 The `substreams.toml` file defines all the different modules available, and also provides you with documentation about the usage of every module.
 
-## 🚀 **New Features in v1.1.1**
+## 🚀 **New Features in v1.1.2**
 
 ### **Smart Event Filtering**
 - **Instruction Discriminators**: Automatically identifies Meteora operation types (deposit, withdraw, rebalance, stake, etc.)
