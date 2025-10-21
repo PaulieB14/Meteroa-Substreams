@@ -1,6 +1,6 @@
 # Meteora Comprehensive Substreams Package
 
-The **Meteora Comprehensive Substreams Package** contains a set of modules that allow you to easily retrieve and analyze data from Meteora's key programs on the Solana blockchain, including Dynamic Vault, Farm, and Zap programs.
+The **Meteora Comprehensive Substreams Package** contains a set of modules that allow you to easily retrieve and analyze data from Meteora's key programs on the Solana blockchain, including Dynamic Vault, Farm, and Zap programs. This package includes foundational store integration for enhanced account owner resolution.
 
 The `substreams.toml` file defines all the different modules available, and also provides you with documentation about the usage of every module.
 
@@ -67,6 +67,10 @@ params:
 ### `meteora_instructions` (map)
 
 * This module provides comprehensive instruction data from all Meteora programs, including Dynamic Vault, Farm, and Zap programs. It processes and enriches instruction data with metadata, timestamps, and program-specific information.
+
+### `map_spl_instructions` (map)
+
+* This module provides foundational store integration for enhanced SPL token account owner resolution. It processes Meteora transactions while leveraging the SPL Initialized Account foundational store to resolve account ownership relationships. This is essential for comprehensive token transfer analysis where you need to know who actually sent/received tokens.
 
 ### `meteora_vault_events` (map)
 
@@ -256,7 +260,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Changelog
 
-### v1.0.0 (Latest)
+### v1.1.0 (Latest)
+- Added foundational store integration
+- New `map_spl_instructions` module with SPL Initialized Account foundational store
+- Enhanced account owner resolution capabilities
+- Improved token transfer analysis
+
+### v1.0.0
 - Initial release
 - Support for Dynamic Vault Program
 - Support for Farm Program  
