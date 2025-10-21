@@ -22,6 +22,26 @@ The `substreams.toml` file defines all the different modules available, and also
 - **Activity Patterns**: Tracks user engagement across Meteora programs
 - **Account Resolution**: Enhanced user identification through foundational stores
 
+## 📋 **Changelog**
+
+### **v1.1.2** (Latest)
+- ✅ **Enhanced Instruction Parsing**: Added discriminators for all Meteora operation types
+- ✅ **Smart Filtering**: Implemented significant event detection with configurable thresholds
+- ✅ **Vault Analytics Module**: New `map_vault_analytics` module for vault-specific metrics
+- ✅ **User Behavior Tracking**: Power user detection and activity pattern analysis
+- ✅ **Low Egress Optimization**: Event-driven processing to reduce data transfer costs
+- ✅ **Enhanced Logging**: Detailed insights for debugging and monitoring
+- ✅ **Backward Compatibility**: All existing functionality preserved
+
+### **v1.1.1**
+- ✅ **Package Icon**: Added Meteora icon to package metadata
+- ✅ **Version Bump**: Updated from v1.1.0 to v1.1.1
+
+### **v1.1.0**
+- ✅ **Initial Release**: Basic Meteora program filtering
+- ✅ **Foundational Store Integration**: SPL account resolution
+- ✅ **Multi-Program Support**: Dynamic Vault, Farm, Zap, and DAMM v1 programs
+
 # Using this module to speed up a substreams
 
 ## Using the full "solana block" object (simplest if changing an existing substreams)
@@ -146,6 +166,14 @@ Use it to get blocks that contain Zap Program instructions:
       query:
         string: "program:zapvX9M3uf5pvy4wRPAbQgdQsM1xmuiFnkfHKPvwMiz"
 ```
+
+### `map_vault_analytics` (map)
+
+* This module provides comprehensive vault-specific analytics for the Dynamic Vault Program. It tracks:
+  - Deposit and withdrawal amounts with net flow calculations
+  - Vault rebalancing events and optimization activities
+  - New vault initialization and deployment tracking
+  - Capital flow analytics and TVL insights
 
 ### `meteora_analytics` (store)
 
