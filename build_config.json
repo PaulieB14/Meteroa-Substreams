@@ -1,0 +1,27 @@
+{
+  "proto_files": ["proto/meteora.proto"],
+  "proto_includes": ["proto"],
+  "output_dir": "src/pb",
+  "type_attributes": {
+    "meteora.v1.Output": ["#[derive(serde::Serialize, serde::Deserialize)]", "#[serde(default)]"],
+    "meteora.v1.MeteoraEvent": ["#[derive(serde::Serialize, serde::Deserialize)]", "#[serde(default)]"]
+  },
+  "field_attributes": {
+    "meteora.v1.MeteoraEvent.block_date": ["#[serde(rename = \"block_date\")]"],
+    "meteora.v1.MeteoraEvent.block_time": ["#[serde(rename = \"block_time\")]"],
+    "meteora.v1.MeteoraEvent.block_slot": ["#[serde(rename = \"block_slot\")]"],
+    "meteora.v1.MeteoraEvent.tx_id": ["#[serde(rename = \"tx_id\")]"],
+    "meteora.v1.MeteoraEvent.signer": ["#[serde(rename = \"signer\")]"],
+    "meteora.v1.MeteoraEvent.program_id": ["#[serde(rename = \"program_id\")]"],
+    "meteora.v1.MeteoraEvent.instruction_type": ["#[serde(rename = \"instruction_type\")]"],
+    "meteora.v1.MeteoraEvent.accounts": ["#[serde(rename = \"accounts\")]"],
+    "meteora.v1.MeteoraEvent.instruction_data": ["#[serde(rename = \"instruction_data\")]"],
+    "meteora.v1.MeteoraEvent.is_inner_instruction": ["#[serde(rename = \"is_inner_instruction\")]"],
+    "meteora.v1.MeteoraEvent.instruction_index": ["#[serde(rename = \"instruction_index\")]"],
+    "meteora.v1.MeteoraEvent.inner_instruction_index": ["#[serde(rename = \"inner_instruction_index\")]"],
+    "meteora.v1.MeteoraEvent.outer_program": ["#[serde(rename = \"outer_program\")]"],
+    "meteora.v1.MeteoraEvent.inner_program": ["#[serde(rename = \"inner_program\")]"],
+    "meteora.v1.MeteoraEvent.txn_fee": ["#[serde(rename = \"txn_fee\")]"],
+    "meteora.v1.MeteoraEvent.signer_sol_change": ["#[serde(rename = \"signer_sol_change\")]"]
+  }
+}

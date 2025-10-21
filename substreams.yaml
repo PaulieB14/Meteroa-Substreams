@@ -1,0 +1,25 @@
+specVersion: v0.1.0
+package:
+  name: "meteora-comprehensive"
+  version: "v1.0.0"
+  description: "Comprehensive Substreams package for Meteora protocol covering Dynamic Vault, Farm, and Zap programs"
+  image: "/Users/paulbarba/Desktop/oMq5m-RV_400x400.jpg"
+
+network: solana
+
+imports:
+  solana_common: https://spkg.io/streamingfast/solana-common-v0.3.0.spkg
+
+binaries:
+  default:
+    type: wasm/rust-v1
+    file: ./target/wasm32-unknown-unknown/release/meteora_substreams.wasm
+
+modules:
+  - name: map_block
+    kind: map
+    initialBlock: 100000000 # Example block, adjust as needed
+    inputs:
+      - source: sf.solana.type.v1.Block
+    output:
+      type: proto:meteora.v1.Output
