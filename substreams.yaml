@@ -1,9 +1,10 @@
 specVersion: v0.1.0
 package:
   name: "meteora-comprehensive"
-  version: "v1.1.0"
+  version: "v1.1.1"
   description: "Comprehensive Substreams package for Meteora protocol covering Dynamic Vault, Farm, and Zap programs"
   url: "https://github.com/PaulieB14/Meteroa-Substreams"
+  image: "icon.jpg"
 
 network: solana
 
