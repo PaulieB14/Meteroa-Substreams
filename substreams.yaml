@@ -4,6 +4,7 @@ package:
   version: "v1.0.0"
   description: "Comprehensive Substreams package for Meteora protocol covering Dynamic Vault, Farm, and Zap programs"
   image: "/Users/paulbarba/Desktop/oMq5m-RV_400x400.jpg"
+  url: "https://github.com/PaulieB14/Meteroa-Substreams"
 
 network: solana
 
