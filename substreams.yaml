@@ -35,5 +35,13 @@ modules:
     output:
       type: proto:sf.solana.type.v1.Block
 
+  - name: map_vault_analytics
+    kind: map
+    initialBlock: 100000000
+    inputs:
+      - source: sf.solana.type.v1.Block
+    output:
+      type: proto:sf.solana.type.v1.Block
+
 params:
   solana_common:transactions_by_programid_without_votes: "program:24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi || program:FarmuwXPWXvefWUeqFAa5w6rifKq5X6E8bimYvrhCB1 || program:zapvX9M3uf5pvy4wRPAbGgdQsM1xmuiFnkfHKPvwMiz || program:Eo7WjKq67rjJQSZxS6z3YkapzY3eMj6Xy8X5EQVn5UaB"

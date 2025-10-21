@@ -1,8 +1,26 @@
 # Meteora Comprehensive Substreams Package
 
-The **Meteora Comprehensive Substreams Package** contains a set of modules that allow you to easily retrieve and analyze data from Meteora's key programs on the Solana blockchain, including Dynamic Vault, Farm, and Zap programs. This package includes foundational store integration for enhanced account owner resolution.
+The **Meteora Comprehensive Substreams Package** contains a set of modules that allow you to easily retrieve and analyze data from Meteora's key programs on the Solana blockchain, including Dynamic Vault, Farm, and Zap programs. This package includes foundational store integration for enhanced account owner resolution, smart filtering for significant events, and vault analytics for comprehensive protocol insights.
 
 The `substreams.toml` file defines all the different modules available, and also provides you with documentation about the usage of every module.
+
+## 🚀 **New Features in v1.1.1**
+
+### **Smart Event Filtering**
+- **Instruction Discriminators**: Automatically identifies Meteora operation types (deposit, withdraw, rebalance, stake, etc.)
+- **Significant Event Detection**: Only emits events that meet importance thresholds (e.g., >$10k transactions)
+- **Low Egress Optimization**: Reduces data transfer costs by filtering out routine transactions
+
+### **Vault Analytics**
+- **TVL Tracking**: Monitors total value locked in vaults
+- **Deposit/Withdrawal Analytics**: Tracks capital flows and net changes
+- **Rebalancing Events**: Identifies when vaults optimize asset allocation
+- **Vault Initialization**: Tracks new vault deployments
+
+### **User Behavior Analytics**
+- **Power User Detection**: Identifies users with multiple transactions
+- **Activity Patterns**: Tracks user engagement across Meteora programs
+- **Account Resolution**: Enhanced user identification through foundational stores
 
 # Using this module to speed up a substreams
 
